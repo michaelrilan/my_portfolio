@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Michael Rilan- Portfolio</title>
+  <title>Michael Rilan-Portfolio</title>
   <link rel="icon" href="assets/img/title_icon.png">
   <meta content="" name="description">
   <meta content="" name="keywords">
@@ -51,7 +51,6 @@
           <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
           <li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-          <li><a href="#services"><i class="bx bx-server"></i> Services</a></li>
           <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
 
         </ul>
@@ -88,7 +87,7 @@
             <img src="assets/img/profile_pic.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3> Web/Mobile/Desktop App Developer</h3>
+            <h3> Web/Mobile/Embedded/Desktop App Developer</h3>
             <p class="font-italic">
               I am always tend to focus on creating something minimalistic and user-friendly applications to solve the client's concerns in an empathetic and web development approach.
             </p>
@@ -202,7 +201,7 @@
 
         <div class="section-title">
           <h2>Resume</h2>
-          <button class="btn btn-primary">Download CV</button>
+          <button class="btn btn-primary" id="download" onclick="DownloadFile('Rilan_Michael_Angelo_resume.pdf')">Download CV</button>
         </div>
 
         <div class="row">
@@ -275,9 +274,9 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Web</li>
-              <li data-filter=".filter-card">Mobile</li>
-              <li data-filter=".filter-web">Embedded</li>
+              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-mobile">Mobile</li>
+              <li data-filter=".filter-embedded">Embedded</li>
 
             </ul>
           </div>
@@ -285,72 +284,71 @@
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-embedded">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/pe_system.PNG" class="img-fluid" alt="">
+              <h5 class="text-center primary">PE System</h5>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+               
+                <a href="assets/img/portfolio/pe_system.PNG" data-gall="portfolioGallery" class="venobox" title="Physical Education System"><i class="bx bx-plus"></i></a>
+                <a href="http://www.physicaleducationsystem.online/" title="View/More Details"><i class="bx bx-link"></i></a>
+              </div>
+             
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
+            <div class="portfolio-wrap">
+              
+              <img src="assets/img/portfolio/resistor.PNG" class="img-fluid" alt="">
+              <h5 class="text-center primary">Resistor Calculator</h5>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/resistor.PNG" data-gall="portfolioGallery" class="venobox" title="Resistor Calculator"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/michaelrilan/Resistor_Calculator" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/bloodbank.png" class="img-fluid" alt="">
+              <h5 class="text-center primary">Bloodbank System</h5>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/bloodbank.png" data-gall="portfolioGallery" class="venobox" title="Bloodbank System"><i class="bx bx-plus"></i></a>
+                <a href="" title="View/More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-embedded">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/pet_feeder.PNG" class="img-fluid" alt="">
+              <h5 class="text-center primary">Pet Feeder System</h5>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/pet_feeder.PNG" data-gall="portfolioGallery" class="venobox" title="Pet Feeder System"><i class="bx bx-plus"></i></a>
+                <a href="https://petfeeder-system.000webhostapp.com/index.php" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-embedded">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/library_system.PNG" class="img-fluid" alt="">
+              <h5 class="text-center primary">TUP Cavite Library System</h5>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/library_system.PNG" data-gall="portfolioGallery" class="venobox" title="TUPC Library System"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/michaelrilan/LIBRARY_SYSTEM" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/tup_services.PNG" class="img-fluid" alt="">
+              <h5 class="text-center primary">TUPC Services</h5>
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="assets/img/portfolio/tup_services.PNG" data-gall="portfolioGallery" class="venobox" title="TUPC-Services"><i class="bx bx-plus"></i></a>
+                <a href="https://github.com/michaelrilan/TUPC-Service" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -415,42 +413,12 @@
               </div>
 
               <!-- <iframe src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30914.29779952914!2d120.96184753931573!3d14.41059902068476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d22e0e26d995%3A0xacd29a43f54f1c2d!2sMolino%20II%2C%20Bacoor%2C%20Cavite!5e0!3m2!1sen!2sph!4v1659291546288!5m2!1sen!2sph" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>---->
+              
+            </div>
+            <div class="col-lg-5">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30914.29779952914!2d120.96184753931573!3d14.41059902068476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d22e0e26d995%3A0xacd29a43f54f1c2d!2sMolino%20II%2C%20Bacoor%2C%20Cavite!5e0!3m2!1sen!2sph!4v1659291546288!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
           </div>
 
         </div>
@@ -489,6 +457,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/download.js"></script>
 
 </body>
 
