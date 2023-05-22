@@ -1,87 +1,85 @@
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
-        crossorigin="anonymous">
-<div class="container">
-    <ul class="ks-cboxtags">
-      <li><input type="checkbox" id="checkboxOne" value="Rainbow Dash"><label for="checkboxOne">Rainbow Dash</label></li>
-      <li><input type="checkbox" id="checkboxTwo" value="Cotton Candy"><label for="checkboxTwo">Cotton Candy</label></li>
-      <li><input type="checkbox" id="checkboxThree" value="Rarity"><label for="checkboxThree">Rarity</label></li>
-      <li><input type="checkbox" id="checkboxFour" value="Moondancer"><label for="checkboxFour">Moondancer</label></li>
-      <li><input type="checkbox" id="checkboxFive" value="Surprise"><label for="checkboxFive">Surprise</label></li>
-      <li><input type="checkbox" id="checkboxSix" value="Twilight Sparkle"><label for="checkboxSix">Twilight
-                      Sparkle</label></li>
-    </ul>
-  
-  </div>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Bell Notification Tab</title>
+	<style>
+		/* Add styles for the notification tab */
+		.notification-tab {
+			position: fixed;
+			top: 20px;
+			right: 20px;
+			background-color: #f1c40f;
+			border-radius: 50%;
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;
+			cursor: pointer;
+		}
 
+		/* Add styles to highlight the table */
+		.highlight {
+			background-color: #3498db;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<!-- Add the bell notification tab -->
+	<div class="notification-tab">
+		<!-- Add the bell icon -->
+		<i class="fa fa-bell"></i>
+		<!-- Add the notification count -->
+		<span class="notification-count">5</span>
+	</div>
 
-  <style>
+	<!-- Add the table with notification data -->
+	<table id="notification-table">
+		<thead>
+			<tr>
+				<th>Date</th>
+				<th>Message</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>2023-05-14</td>
+				<td>New notification received</td>
+			</tr>
+			<tr>
+				<td>2023-05-13</td>
+				<td>Reminder: Meeting tomorrow</td>
+			</tr>
+			<tr>
+				<td>2023-05-12</td>
+				<td>Payment received</td>
+			</tr>
+			<tr>
+				<td>2023-05-11</td>
+				<td>Account created</td>
+			</tr>
+			<tr>
+				<td>2023-05-10</td>
+				<td>Welcome to our website</td>
+			</tr>
+		</tbody>
+	</table>
 
+	<!-- Add the JavaScript code -->
+	<script>
+		// Add an event listener to the notification tab
+		document.querySelector('.notification-tab').addEventListener('click', function() {
+			// Get the table element by ID
+			var table = document.getElementById('notification-table');
+			// Add the highlight class to the table
+			table.classList.add('highlight');
+			// Remove the highlight class after 3 seconds
+			setTimeout(function() {
+				table.classList.remove('highlight');
+			}, 3000);
+		});
+	</script>
+</body>
+</html>
 
-
-ul.ks-cboxtags {
-    list-style: none;
-    padding: 20px;
-}
-ul.ks-cboxtags li{
-  display: inline;
-}
-ul.ks-cboxtags li label{
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    color: #000000;
-    border-radius: 25px;
-    white-space: nowrap;
-    margin: 3px 0px;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
-    transition: all .2s;
-}
-
-ul.ks-cboxtags li label {
-    padding: 8px 12px;
-    cursor: pointer;
-}
-
-ul.ks-cboxtags li label::before {
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 12px;
-    padding: 2px 6px 2px 2px;
-    content: "\f067";
-    transition: transform .3s ease-in-out;
-}
-
-ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
-    content: "\f00c";
-    transform: rotate(-360deg);
-    transition: transform .3s ease-in-out;
-}
-
-ul.ks-cboxtags li input[type="checkbox"]:checked + label {
-    border: 2px solid #122542;
-    background-color: #000000;
-    color: #fff;
-    transition: all .2s;
-}
-
-ul.ks-cboxtags li input[type="checkbox"] {
-  display: absolute;
-}
-ul.ks-cboxtags li input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
-}
-ul.ks-cboxtags li input[type="checkbox"]:focus + label {
-  border: 2px solid #0331ca;
-}
-  </style>
